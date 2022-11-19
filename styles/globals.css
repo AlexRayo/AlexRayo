@@ -3,7 +3,42 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html {
     scroll-behavior: smooth;
     font-family: 'Lato', sans-serif;
+}
+
+* {
+    @apply transition duration-300 ease-out
+}
+/** text **/
+.font-black { 
+    font-weight: 900; 
+}
+
+.title {
+    @apply text-5xl font-black
+}
+
+.subtitle {
+    @apply text-2xl
+}
+
+/** utils **/
+
+.btn-primary {
+    @apply py-2 px-4 rounded bg-slate-900 text-white border border-slate-900 hover:bg-opacity-75 hover:border-opacity-5 
+}
+.btn-secondary {
+    @apply py-2 px-4 rounded text-slate-900 border border-slate-900 hover:border-opacity-75 
+}
+
+/** etc **/
+.icon-skill {
+    @apply w-10;
+}
+
+.rectangle-button {
+    @apply bg-slate-900 block h-1.5 w-16 mt-1 rounded
 }

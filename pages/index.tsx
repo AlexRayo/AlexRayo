@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
+import Skill from '../components/skillItem';
+
+import { skillIcons } from '../icons/skills';
+
 export default function Home() {
   return (
     <div>
@@ -10,10 +14,119 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='flex items-center justify-center '>
-        <h1 className="text-lg text-sky-400">
-          Welcome to <a href="https://nextjs.org">Next.js xd!</a>
-        </h1>
+    {/* layout */}
+      <main className='container mx-auto'>
+        {/* body */}
+        <div className="2xl:w-8/12 mx-auto">
+
+            {/* cover */}
+            <div className="h-96 bg-slate-300 flex items-center p-3">
+                <div className='md:w-6/12'>
+                    <h1 className="title">
+                        Asdf Devs
+                    </h1>
+                    <h2 className='subtitle'>Frontend developer</h2>
+                    <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officiis omnis pariatur alias vero hic nobis iste, ipsa.</p>
+                    <div className="flex  justify-end mt-2">                        
+                    <a href="#" className='btn-secondary'>Contact</a>
+                        <a href="#" className='btn-primary ml-4'>My Resume</a>
+                    </div>
+                </div>
+            </div>
+
+            {/* About */}
+            <div className="py-8 flex items-center p-3">
+                <div className='md:w-6/12'>
+                    <h2 className="title">
+                        About
+                    </h2>
+                    <span className='rectangle-button'></span>
+                    <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consectetur quos ab autem hic earum cupiditate architecto!.</p>
+                    <br/>
+                    <p className=''>Inventore facere earum nostrum quod illo libero qui minima. Eligendi, explicabo esse.</p>
+                </div>
+            </div>
+
+            {/* Skills */}
+            <div className="py-8 p-3">
+                <div className=''>
+                    <h2 className="title">
+                        Skills
+                    </h2>
+                    <span className='rectangle-button'></span>
+                    <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consectetur quos ab autem hic earum cupiditate architecto!.</p>
+                    <br/>
+                </div>
+                <div className="grid grid-cols-3 gap-2">
+                    <Skill                    
+                        skillName = {'HTML5'}
+                        svgCode = {skillIcons.html5.svgCode}
+                        viewBox={skillIcons.html5.viewBox}
+                        iconColor = {'fill-orange-400'}
+                    />
+                    <Skill                    
+                        skillName = {'CSS3'}
+                        svgCode = {skillIcons.css3.svgCode}
+                        viewBox={skillIcons.css3.viewBox}
+                        iconColor = {'fill-sky-400'}
+                    />
+                    <Skill                    
+                        skillName = {'JavaScript'}
+                        svgCode = {skillIcons.javascript.svgCode}
+                        viewBox={skillIcons.javascript.viewBox}
+                        iconColor = {'fill-amber-400'}
+                    />
+                    <Skill                    
+                        skillName = {'TypeScript'}
+                        svgCode = {skillIcons.typescript.svgCode}
+                        viewBox={skillIcons.typescript.viewBox}
+                        iconColor = {'fill-sky-600'}
+                    />
+                    <Skill                    
+                        skillName = {'MySql'}
+                        svgCode = {skillIcons.mysql.svgCode}
+                        viewBox={skillIcons.mysql.viewBox}
+                        iconColor = {'fill-sky-700'}
+                    />
+                    <Skill                    
+                        skillName = {'Git/Github'}
+                        svgCode = {skillIcons.git.svgCode}
+                        viewBox={skillIcons.git.viewBox}
+                        iconColor = {'fill-slate-900'}
+                    />
+                    <Skill                    
+                        skillName = {'React JS'}
+                        svgCode = {skillIcons.react.svgCode}
+                        viewBox={skillIcons.react.viewBox}
+                        iconColor = {'fill-sky-400'}
+                    />
+                    <Skill                    
+                        skillName = {'React Native'}
+                        svgCode = {skillIcons.react.svgCode}
+                        viewBox={skillIcons.react.viewBox}
+                        iconColor = {'fill-sky-400'}
+                    />
+                    <Skill                    
+                        skillName = {'NodeJS'}
+                        svgCode = {skillIcons.node.svgCode}
+                        viewBox={skillIcons.node.viewBox}
+                        iconColor = {'fill-green-500'}
+                    />
+                    <Skill                    
+                        skillName = {'Wordpress'}
+                        svgCode = {skillIcons.wordpress.svgCode}
+                        viewBox={skillIcons.wordpress.viewBox}
+                        iconColor = {'fill-sky-700'}
+                    />
+                    <Skill                    
+                        skillName = {'UI/UX Design'}
+                        svgCode = {skillIcons.uiux.svgCode}
+                        viewBox={skillIcons.uiux.viewBox}
+                        iconColor = {'fill-violet-500'}
+                    />
+                </div>
+            </div>
+        </div>
       </main>
 
     </div>
