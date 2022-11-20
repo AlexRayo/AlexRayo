@@ -12,18 +12,6 @@ html {
 * {
     @apply transition duration-300 ease-out
 }
-/** text **/
-.font-black { 
-    font-weight: 900; 
-}
-
-.title {
-    @apply text-5xl font-black
-}
-
-.subtitle {
-    @apply text-2xl
-}
 
 /** utils **/
 
@@ -35,10 +23,6 @@ html {
 }
 
 /** etc **/
-.icon-skill {
-    @apply w-10;
-}
-
 .rectangle-button {
     @apply bg-slate-900 block h-1.5 w-16 mt-1 rounded
 }

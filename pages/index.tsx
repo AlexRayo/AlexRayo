@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-import Skill from '../components/skillItem';
+import Text from '../components/text'
+import Skill from '../components/skillItem'
 
-import { skillIcons } from '../icons/skills';
+import { skillIcons } from '../icons/skills'
 
 export default function Home() {
   return (
@@ -17,16 +18,22 @@ export default function Home() {
     {/* layout */}
       <main className='container mx-auto'>
         {/* body */}
-        <div className="2xl:w-8/12 mx-auto">
+        <div className="2xl:w-7/12 mx-auto">
 
             {/* cover */}
-            <div className="h-96 bg-slate-300 flex items-center p-3">
+            <div className="h-96 border-b border-slate-300 flex items-center p-3">
                 <div className='md:w-6/12'>
-                    <h1 className="title">
-                        Asdf Devs
-                    </h1>
-                    <h2 className='subtitle'>Frontend developer</h2>
-                    <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officiis omnis pariatur alias vero hic nobis iste, ipsa.</p>
+                    <Text
+                        text="Asdf Devs"
+                        size="xl"
+                    />
+                    <Text
+                        text="Frontend developer"
+                        size="md"
+                    />
+                    <Text
+                        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officiis omnis pariatur alias vero hic nobis iste, ipsa."
+                    />
                     <div className="flex  justify-end mt-2">                        
                     <a href="#" className='btn-secondary'>Contact</a>
                         <a href="#" className='btn-primary ml-4'>My Resume</a>
@@ -35,29 +42,38 @@ export default function Home() {
             </div>
 
             {/* About */}
-            <div className="py-8 flex items-center p-3">
+            <div className="my-8 lg:my-20 flex items-center p-3">
+                <div className="md:w-6/12"></div>
                 <div className='md:w-6/12'>
-                    <h2 className="title">
-                        About
-                    </h2>
+                    <Text
+                        text="About"
+                        size="lg"
+                    />
                     <span className='rectangle-button'></span>
-                    <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consectetur quos ab autem hic earum cupiditate architecto!.</p>
+                    <Text
+                        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consectetur quos ab autem hic earum cupiditate architecto!."
+                    />
                     <br/>
-                    <p className=''>Inventore facere earum nostrum quod illo libero qui minima. Eligendi, explicabo esse.</p>
+                    <Text
+                        text="Inventore facere earum nostrum quod illo libero qui minima. Eligendi, explicabo esse."
+                    />
                 </div>
             </div>
 
             {/* Skills */}
-            <div className="py-8 p-3">
-                <div className=''>
-                    <h2 className="title">
-                        Skills
-                    </h2>
+            <div className="my-8 lg:my-20 p-3">
+                <div className='md:w-6/12'>
+                    <Text
+                        text="Skills"
+                        size="lg"
+                    />
                     <span className='rectangle-button'></span>
-                    <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consectetur quos ab autem hic earum cupiditate architecto!.</p>
-                    <br/>
+                    <Text
+                        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consectetur quos ab autem hic earum cupiditate architecto!."
+                        style="mb-2"
+                    />
                 </div>
-                <div className="grid grid-cols-3 gap-2">
+                <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
                     <Skill                    
                         skillName = {'HTML5'}
                         svgCode = {skillIcons.html5.svgCode}
