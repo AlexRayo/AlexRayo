@@ -1,7 +1,7 @@
 import React from 'react'
 import ModalSkill from '../components/modalSkill'
 
-function skillItem({ modalText, svgCode, viewBox, skillName, iconColor }: any) {
+const skillItem =({ modalText, svgCode, viewBox, skillName, iconColor }: any) =>{
     const [showModalSkill, setShowModalSkill] = React.useState(false)
 
     const modalSkill = () => {
