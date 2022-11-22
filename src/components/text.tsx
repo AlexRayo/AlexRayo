@@ -1,7 +1,16 @@
 import React from 'react'
 
 function skillItem({size, text, color, style}:any) {
-    /* "style" param add more css classes */
+    /* 
+    * "style" param add more css classes
+
+    * TAGS SIZES
+    ** h1 = xl
+    ** h2 = lg
+    ** h4 = md 
+    ** p = sm and xs
+
+    */
   return (
     size === "xl"?
     <h1 className={`font-bold text-5xl md:text-6xl ${color} ${style}`}>
@@ -19,9 +28,9 @@ function skillItem({size, text, color, style}:any) {
     </h4>
     :
     size === "xs"?
-    <h4 className={`text-xs ${color} ${style}`}>
+    <p className={`text-xs ${color} ${style}`}>
         {text}
-    </h4>
+    </p>
     :
     <p className={`text-sm ${color} ${style}`}>
         {text}
