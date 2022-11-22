@@ -16,7 +16,7 @@ function HomeCover({ style }: any) {
                 <Text
                     text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officiis omnis pariatur alias vero hic nobis iste, ipsa."
                 />
-                <div className="flex  justify-end mt-2">
+                <div className="flex justify-end mt-2">
                     <a href="#" className='btn-secondary'>Contact</a>
                     <a href="#" className='btn-primary ml-4'>My Resume</a>
                 </div>

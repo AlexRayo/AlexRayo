@@ -1,27 +1,27 @@
+import Image from 'next/image'
 
-import React from 'react'
-import CoverSection from '../sections/homeCover'
-import AboutSection from '../sections/homeAbout'
-import SkillsSection from '../sections/homeSkills'
+import Text from '../components/text'
+import Skill from '../components/skillItem'
 
-import ModalSkill from '../components/modalSkill'
+import { skillIcons } from '../icons/skills'
+
+import Cover from '../sections/homeCover'
+import About from '../sections/homeAbout'
+import Skills from '../sections/homeSkills'
 
 export default function Home() {
-    const [showModal, setShowModal] = React.useState(false)
-
     return (
         <div className="2xl:w-7/12 mx-auto">
-            <CoverSection style={"h-96 border-b border-slate-300 flex items-center p-3"}/>
-            <button onClick={()=>setShowModal(!showModal)}>Open modal</button>
 
-            <AboutSection style={"my-8 lg:my-20 flex items-center p-3"}/>
+            {/* cover */}
+            <Cover style={"h-96 border-b border-slate-300 flex items-center p-3"}/>
 
-            <SkillsSection style={"my-8 lg:my-20 p-3"}/>
-
-            <ModalSkill setShowModal={setShowModal} showModal={showModal}
-            style={showModal? 'block' : 'hidden'}
-            />
-           
+            {/* About */}
+            <About style={"my-8 lg:my-20 flex items-center p-3"}/>
+            
+            {/* Skills */}
+            <Skills style="my-8 lg:my-20 p-3"/>            
+            
         </div>
     )
 }
