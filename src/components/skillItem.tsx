@@ -1,7 +1,7 @@
 import React from 'react'
 import ModalSkill from '../components/modalSkill'
 
-const skillItem =({ modalText, svgCode, viewBox, skillName, iconColor }: any) =>{
+const SkillItem =({ modalText, svgCode, viewBox, skillName, iconColor }: any) =>{
     const [showModalSkill, setShowModalSkill] = React.useState(false)
 
     const modalSkill = () => {
@@ -31,4 +31,4 @@ const skillItem =({ modalText, svgCode, viewBox, skillName, iconColor }: any) =>
     )
 }
 
-export default skillItem
+export default SkillItem
