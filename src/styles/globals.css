@@ -13,6 +13,25 @@ html {
     @apply transition duration-300 ease-out
 }
 
+/* COLORS */
+.bg-primary {
+    @apply bg-slate-800
+}
+
+.bg-secondary {
+    @apply bg-slate-500
+}
+
+.text-primary {
+    @apply bg-slate-800
+}
+.text-secondary {
+    @apply text-sky-400
+}
+.text-gray {
+    @apply text-slate-300
+}
+
 /** utils **/
 .btn-primary {
     @apply py-2 px-4 rounded bg-slate-900 text-white border border-slate-900 hover:bg-opacity-75 hover:border-opacity-5 

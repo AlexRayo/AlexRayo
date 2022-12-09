@@ -1,17 +1,17 @@
 import React from 'react'
 import Text from '../components/text'
 
-function HomeCover({ style }: any) {
+function HomeCover() {
     return (
-        <div className={style}>
+        <div className="h-96 border-b border-slate-300 flex items-center p-3">
             <div className='md:w-6/12'>
                 <Text
                     text="Asdf Devs"
-                    size="xl"
+                    size="2xl"
                 />
                 <Text
                     text="Frontend developer"
-                    size="md"
+                    size="lg"
                 />
                 <Text
                     text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officiis omnis pariatur alias vero hic nobis iste, ipsa."

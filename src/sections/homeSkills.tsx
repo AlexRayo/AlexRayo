@@ -4,13 +4,13 @@ import Skill from '../components/skillItem'
 
 import { skillIcons } from '../icons/skills'
 
-function Skills({style}:any) {
+function Skills() {
     return (
-        <div className={style}>
+        <div className="my-8 lg:my-20 p-3">
             <div className='md:w-6/12'>
                 <Text
                     text="Skills"
-                    size="lg"
+                    size="xl"
                 />
                 <span className='rectangle-button'></span>
                 <Text
@@ -23,21 +23,21 @@ function Skills({style}:any) {
                     skillName={'HTML5'}
                     svgCode={skillIcons.html5.svgCode}
                     viewBox={skillIcons.html5.viewBox}
-                    iconColor={'fill-orange-400'}
+                    iconColor={'fill-orange-600'}
                     modalText={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
                 />
                 <Skill
                     skillName={'CSS3'}
                     svgCode={skillIcons.css3.svgCode}
                     viewBox={skillIcons.css3.viewBox}
-                    iconColor={'fill-sky-400'}
+                    iconColor={'fill-sky-500'}
                     modalText={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
                 />
                 <Skill
                     skillName={'JavaScript'}
                     svgCode={skillIcons.javascript.svgCode}
                     viewBox={skillIcons.javascript.viewBox}
-                    iconColor={'fill-amber-400'}
+                    iconColor={'fill-amber-500'}
                     modalText={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
                 />
                 <Skill

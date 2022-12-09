@@ -12,18 +12,23 @@ function skillItem({size, text, color, style}:any) {
 
     */
   return (
-    size === "xl"?
-    <h1 className={`font-bold text-5xl md:text-6xl ${color} ${style}`}>
+    size === "2xl"?
+    <h1 className={`font-bold text-5xl ${color} ${style}`}>
         {text}
     </h1>
     :
-    size === "lg"?
-    <h2 className={`font-bold text-4xl md:text-5xl ${color} ${style}`}>
+    size === "xl"?
+    <h2 className={`font-bold text-4xl ${color} ${style}`}>
         {text}
     </h2>
     :
+    size === "lg"?
+    <h3 className={`text-2xl ${color} ${style}`}>
+        {text}
+    </h3>
+    :
     size === "md"?
-    <h4 className={`text-2xl md:text-3xl ${color} ${style}`}>
+    <h4 className={`text-lg ${color} ${style}`}>
         {text}
     </h4>
     :
@@ -32,7 +37,7 @@ function skillItem({size, text, color, style}:any) {
         {text}
     </p>
     :
-    <p className={`text-sm ${color} ${style}`}>
+    <p className={`text-base ${color} ${style}`}>
         {text}
     </p>
   )
