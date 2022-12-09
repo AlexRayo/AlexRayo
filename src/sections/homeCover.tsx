@@ -8,17 +8,20 @@ function HomeCover() {
                 <Text
                     text="Asdf Devs"
                     size="2xl"
+                    color="text-primary"
                 />
                 <Text
                     text="Frontend developer"
                     size="lg"
+                    color="text-primary"
                 />
                 <Text
                     text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officiis omnis pariatur alias vero hic nobis iste, ipsa."
+                    color="text-primary"
                 />
                 <div className="flex justify-end mt-2">
                     <a href="#" className='btn-secondary'>Contact</a>
-                    <a href="#" className='btn-primary ml-4'>My Resume</a>
+                    <a href="#" className='btn-primary ml-3'>My Resume</a>
                 </div>
             </div>
         </div>

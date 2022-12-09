@@ -11,11 +11,13 @@ function Skills() {
                 <Text
                     text="Skills"
                     size="xl"
+                    color="text-primary"
                 />
                 <span className='rectangle-button'></span>
                 <Text
                     text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consectetur quos ab autem hic earum cupiditate architecto!."
                     style="mb-2"
+                    color="text-primary"
                 />
             </div>
             <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">

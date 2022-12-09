@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
+import { FaRocket } from "react-icons/fa";
+
 import Text from '../components/text'
 import Button from '../components/button'
 
@@ -7,12 +9,18 @@ const ProjectItem =({ srcImg, altImg, title, technologies, description, urlProje
 
     return (
         <div className="group relative md:w-12/12 h-60 overflow-hidden rounded my-4 md:m-3 drop-shadow-lg">
-            <Text 
-                text={title}
-                size={"md"}
-                color={"text-gray"}
-                style={"pb-3 bg-primary pl-6 py-3"}
-            />
+            <div className="flex pb-3 bg-primary pl-6 py-3">
+                <FaRocket
+                    className={"mt-1.5 mr-2 text-gray"}
+                />
+                <Text 
+                    text={title}
+                    size={"md"}
+                    color={"text-gray"}
+                    style={""}
+                />                
+            </div>
+            
             <Image
                 src={srcImg}
                 placeholder="blur"
@@ -21,7 +29,7 @@ const ProjectItem =({ srcImg, altImg, title, technologies, description, urlProje
                 height={500}
                 className={'absolute'}
             />
-            <div className="absolute flex justify-center w-full h-full p-6 mt-80 group-hover:mt-0 transition-all bg-primary opacity-95">
+            <div className="absolute flex justify-center w-full h-full p-6 mt-80 group-hover:mt-0 group-hover:border-t-2 group-hover:border-sky-400 transition-all bg-primary opacity-95">
                 <div>
                     <Text 
                         text={"Tecnologías utilizadas:"}
