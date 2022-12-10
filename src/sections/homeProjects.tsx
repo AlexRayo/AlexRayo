@@ -39,7 +39,7 @@ function HomeProjects() {
                         title={"Servicios domésticos"}
                         technologies={"Wordpress, ReactJS, PHP, CSS3, HTML5, JavaScript"}
                         description={"Este sitio web posee formulario con ReactJS y PHP para capturar peticiones de servicios por parte de los clientes"}
-                        urlProject={"https://brokerland.es"}
+                        urlProject={"https://home-services.es/"}
                     />                    
 
                     <ProjectItem
@@ -48,7 +48,7 @@ function HomeProjects() {
                         title={"Tienda online"}
                         technologies={"Wordpress, Woocommerce, Stripe, CSS3, HTML5, JavaScript"}
                         description={"Tienda online con capacidad de realizar pagos con tarjeta, posee su propio buscador, carrito, creación de cuentas por parte del cliente, blog y gestion de facturación"}
-                        urlProject={"https://ydepostrelaguinda.com"}
+                        urlProject={"https://ydepostrelaguinda.com/"}
                     />
 
                     <ProjectItem
@@ -57,7 +57,7 @@ function HomeProjects() {
                         title={"Buscador"}
                         technologies={"Wordpress, PHP, CSS3, HTML5, JavaScript"}
                         description={"Sitio web con buscador en PHP para encontrar ofertas de productos y servicios de negocios/tiendas online afiliadas"}
-                        urlProject={"https://brokerland.es"}
+                        urlProject={"https://rebajatucompra.com/"}
                     />
                     <ProjectItem
                         srcImg={srcImgBrokerland}
@@ -65,7 +65,7 @@ function HomeProjects() {
                         title={"Servicio de hosting"}
                         technologies={"Wordpress, CSS3, HTML5, JavaScript"}
                         description={"Sitio web informativo con formulario de solicitud de servicios y chat directo"}
-                        urlProject={"https://brokerland.es"}
+                        urlProject={"https://brokerland.es/"}
                     />
                     <ProjectItem
                         srcImg={srcImgRestaurant}
@@ -73,7 +73,7 @@ function HomeProjects() {
                         title={"Restaurante"}
                         technologies={"Wordpress, CSS3, HTML5, JavaScript"}
                         description={"Sitio web informativo al cual se ha implementado chat directo, google Maps e información básica del negocio"}
-                        urlProject={"https://santamariarestaurante.es"}
+                        urlProject={"https://santamariarestaurante.es/"}
                     />
                 </div>
             </div>
