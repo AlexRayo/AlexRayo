@@ -8,7 +8,7 @@ import Projects from '../sections/homeProjects'
 export default function Home() {
 
     return (
-        <div className="2xl:w-7/12 mx-auto">
+        <div>
 
             <Cover/>
 

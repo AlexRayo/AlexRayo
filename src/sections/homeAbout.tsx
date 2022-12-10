@@ -3,24 +3,26 @@ import Text from '../components/text'
 
 function HomeAbout() {
     return (
-        <div className="my-8 lg:my-20 flex items-center p-3">
-            <div className="md:w-6/12"></div>
-            <div className='md:w-6/12'>
-                <Text
-                    text="About"
-                    size="xl"
-                    color="text-primary"
-                />
-                <span className='rectangle-button'></span>
-                <Text
-                    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consectetur quos ab autem hic earum cupiditate architecto!."
-                    color="text-primary"
-                />
-                <br />
-                <Text
-                    text="Inventore facere earum nostrum quod illo libero qui minima. Eligendi, explicabo esse."
-                    color="text-primary"
-                />
+        <div className="">
+            <div className="2xl:w-7/12 mx-auto my-8 lg:my-20 flex items-center p-3">
+                <div className="md:w-6/12"></div>
+                <div className='md:w-6/12'>
+                    <Text
+                        text="About"
+                        size="xl"
+                        color="text-primary"
+                    />
+                    <span className='rectangle-button'></span>
+                    <Text
+                        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consectetur quos ab autem hic earum cupiditate architecto!."
+                        color="text-primary"
+                    />
+                    <br />
+                    <Text
+                        text="Inventore facere earum nostrum quod illo libero qui minima. Eligendi, explicabo esse."
+                        color="text-primary"
+                    />
+                </div>
             </div>
         </div>
     )

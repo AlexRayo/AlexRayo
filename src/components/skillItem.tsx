@@ -8,7 +8,7 @@ const SkillItem =({ modalText, svgCode, viewBox, skillName, iconColor }: any) =>
         setShowModalSkill(!showModalSkill);
     }
     return (
-        <>
+        <div>
             <ModalSkill
                 svgCode={svgCode}
                 viewBox={viewBox}
@@ -19,7 +19,7 @@ const SkillItem =({ modalText, svgCode, viewBox, skillName, iconColor }: any) =>
                 setShowModal={setShowModalSkill}
                 style={showModalSkill ? 'initial' : 'hidden'}
             />
-            <div onClick={modalSkill} className="block py-2 text-center bg-slate-100 rounded flex items-center justify-center">
+            <div onClick={modalSkill} className="cursor-pointer block py-2 text-center bg-slate-100 rounded flex items-center justify-center">
                 <div className="text-center inline-block">
                     <div className="">
                         <svg className={`w-10 md:w-12 lg:w-14 mx-auto ${iconColor}`} xmlns="http://www.w3.org/2000/svg" viewBox={viewBox}><path d={svgCode} /></svg>
@@ -27,7 +27,7 @@ const SkillItem =({ modalText, svgCode, viewBox, skillName, iconColor }: any) =>
                     <p className="text-xs text-gray-500 mt-1">{skillName}</p>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
