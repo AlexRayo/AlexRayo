@@ -96,6 +96,7 @@ const ProjectItem = ({ srcImg, altImg, title, technologies, description, urlProj
                             href={urlProject}
                             className="flex text-secondary font-bold italic"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             <FaExternalLinkAlt
                                 className={"mt-1.5 mr-2 text-secondary"}

@@ -38,7 +38,7 @@ function HomeProjects() {
                         altImg={"Home services"}
                         title={"Servicios domésticos"}
                         technologies={"Wordpress, ReactJS, PHP, CSS3, HTML5, JavaScript"}
-                        description={"Web que ofrece servicios domésticos; posee formulario con ReactJS y PHP para capturar peticiones de clientes"}
+                        description={"Este sitio web posee formulario con ReactJS y PHP para capturar peticiones de servicios por parte de los clientes"}
                         urlProject={"https://brokerland.es"}
                     />                    
 
