@@ -26,7 +26,7 @@ html {
     @apply text-slate-800
 }
 .text-secondary {
-    @apply text-sky-400
+    @apply text-sky-500
 }
 .text-gray {
     @apply text-slate-300
@@ -37,7 +37,7 @@ html {
     @apply py-2 px-4 rounded bg-primary text-white border border-slate-800 hover:bg-opacity-75 hover:border-opacity-5 
 }
 .btn-secondary {
-    @apply py-2 px-4 rounded text-primary border border-slate-700 hover:border-opacity-75 
+    @apply py-2 px-4 rounded text-slate-600 border border-slate-400 hover:border-opacity-75 
 }
 
 /** etc **/

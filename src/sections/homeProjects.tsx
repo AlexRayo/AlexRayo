@@ -1,6 +1,8 @@
 import React from 'react'
 import ProjectItem from '../components/projectItem'
 
+import Text from '../components/text'
+
 import srcImgRestaurant from '../public/img/santamaria.png'
 import srcImgBrokerland from '../public/img/brokerand.png'
 import srcImgYDePostre from '../public/img/y-te-postre-la-guinda.png'
@@ -9,13 +11,32 @@ import srcImgHomeServices from '../public/img/home-services.png'
 
 function HomeProjects() {
     return (
-        <div className={"p-3 grid md:grid-cols-2 lg:p-0"}>
+        <div>
+        <div className='md:w-6/12 px-3'>
+                <Text
+                    text="Proyectos"
+                    size="xl"
+                    color="text-primary"
+                />
+                <span className='rectangle-button'></span>
+                <Text
+                    text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consectetur quos ab autem hic earum cupiditate architecto!."
+                    color="text-primary"
+                />
+                <br />
+                <Text
+                    text="Inventore facere earum nostrum quod illo libero qui minima. Eligendi, explicabo esse."
+                    color="text-primary"
+                />
+        </div>
+       
+        <div className={"p-3 grid md:gap-x-12 md:gap-y-4 md:grid-cols-2 lg:p-0"}>
             <ProjectItem
                 srcImg={srcImgRestaurant}
                 altImg={"Santamaria"}
                 title={"Restaurante"}
                 technologies={"Wordpress, CSS3, HTML5, JavaScript"}
-                description={""}
+                description={"Sitio web informativo al cual se ha implementado chat directo, google Maps e información básica del negocio"}
                 urlProject={"https://santamariarestaurante.es"}
             />
 
@@ -54,6 +75,7 @@ function HomeProjects() {
                 urlProject={"https://brokerland.es"}
             />
         </div>
+    </div>
     )
 }
 
