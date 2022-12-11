@@ -12,16 +12,15 @@ import srcImgHomeServices from '../public/img/home-services.png'
 
 function HomeProjects() {
     return (
-        <div className="relative bg-slate-900 py-12">
-            
-            <div className='2xl:w-7/12 mx-auto'>
+        <div className="relative bg-img">
+            <div className='2xl:w-7/12 mx-auto py-12'>
                 <div className='md:w-6/12 px-3'>
                     <Text
                         text="Proyectos"
                         size="xl"
-                        color="text-slate-200"
+                        color="text-sky-400"
                     />
-                    <span className='rectangle-button bg-slate-200'></span>
+                    <span className='rectangle-button bg-sky-400'></span>
                     <Text
                         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consectetur quos ab autem hic earum cupiditate architecto!."
                         color="text-slate-500"

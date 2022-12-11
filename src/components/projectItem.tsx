@@ -8,7 +8,7 @@ import Button from '../components/button'
 const ProjectItem = ({ srcImg, altImg, title, technologies, description, urlProject }: any) => {
 
     return (
-        <div className="group relative mb-4 md:w-12/12 h-80 md:h-80 overflow-hidden my-4 md:m-3 rounded-b-md shadow-lg">
+        <div className="group relative mb-4 md:w-12/12 h-80 md:h-80 overflow-hidden my-4 md:m-3 rounded-b-md shadow-lg border border-slate-800">
 
             <div className="absolute w-full">
                 
@@ -36,7 +36,7 @@ const ProjectItem = ({ srcImg, altImg, title, technologies, description, urlProj
                         </div>
                     </div>
                 </div>
-                <div className="h-32 md:h-32 bg-slate-200 flex items-center justify-between">
+                <div className="h-32 md:h-32 bg-slate-900 flex items-center justify-between">
                     <div className="flex p-3 md:px-6">
                         <FaTools
                             className={"mt-1 mr-2 text-secondary min-w-[20px]"}                            
@@ -46,31 +46,31 @@ const ProjectItem = ({ srcImg, altImg, title, technologies, description, urlProj
                         <Text
                             text={"Tecnologías:"}
                             size={"sm"}
-                            color={"text-primary font-bold"}
+                            color={"text-secondary font-bold"}
                         />
                         <Text
                             text={technologies}
                             size={"sm"}
-                            color={"text-primary italic"}
+                            color={"text-slate-300"}
                         />
                         </div>
                     </div>
                     <div className="flex justify-end mr-3 min-w-[100px]">
-                        <div className="btn-secondary flex pb-3 py-0">
+                        <div className="btn-secondary flex pb-3 py-0 border border-slate-800">
                             <FaEye
-                                className={"mr-1 text-slate-600"}
+                                className={"mr-1 text-slate-300"}
                             />
                             <Text
                                 text={"Ver más"}
                                 size={"xs"}
-                                color={"text-slate-600"}
+                                color={"text-slate-300"}
                             />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="absolute flex items-center justify-center w-full h-full px-6 mt-80 group-hover:mt-0 group-hover:border-t-2 group-hover:border-sky-400 transition-all bg-primary opacity-95">
+            <div className="absolute flex items-center justify-center w-full h-full px-6 mt-80 group-hover:mt-0 group-hover:border-t-2 group-hover:border-sky-400 transition-all bg-slate-900 opacity-95">
                 <div>
                     <div>
                         <Text

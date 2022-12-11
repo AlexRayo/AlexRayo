@@ -33,27 +33,45 @@ html {
 }
 
 /** utils **/
+.btn {
+    @apply py-2 px-4 rounded hover:bg-opacity-75
+}
 .btn-primary {
-    @apply py-2 px-4 rounded bg-primary text-white border border-slate-800 hover:bg-opacity-75 hover:border-opacity-5 
+    @apply btn  bg-sky-500 text-white 
 }
 .btn-secondary {
-    @apply py-2 px-4 rounded text-slate-600 border border-slate-400 hover:border-opacity-75 
+    @apply btn text-slate-300 bg-slate-900
 }
 
 /** etc **/
 .rectangle-button {
-    @apply block h-1.5 w-16 mt-1 rounded
+    @apply block h-1.5 w-16 my-2 rounded
+}
+
+.bg-pattern-2 {
+    background-image:  linear-gradient(#131e36 0.8px, transparent 0.8px), linear-gradient(90deg, #131e36 0.8px, transparent 0.8px), linear-gradient(45deg, #24215d 2px, #0f172a 2px);
+    background-size: 0px 0px, 0px 0px, 4px 4px, 4px 4px;
+    background-position: -0.0px -0.0px, -0.0px -0.0px, -0.0px -0.0px, -0.0px -0.0px;
 }
 
 .bg-pattern {
-    background-color: #4b4b4b;
-    opacity: 1;
+    background-image:  linear-gradient(#131e36 0.8px, transparent 0.8px), linear-gradient(90deg, #131e36 0.8px, transparent 0.8px), linear-gradient(45deg, #110e44 0.4px, #0f172a 0.4px);
+    background-size: 20px 20px, 20px 20px, 4px 4px, 4px 4px;
+    background-position: -0.8px -0.8px, -0.8px -0.8px, -0.4px -0.4px, -0.4px -0.4px;
+}
+
+.bg-pattern-light {
     background-image:  linear-gradient(#cbcbcb 0.8px, transparent 0.8px), linear-gradient(90deg, #cbcbcb 0.8px, transparent 0.8px), linear-gradient(#4b4b4b 0.4px, transparent 0.4px), linear-gradient(90deg, #cbcbcb 0.4px, #f1f1f1 0.4px);
     background-size: 15px 15px, 15px 15px, 4px 4px, 4px 4px;
     background-position: -0.8px -0.8px, -0.8px -0.8px, -0.4px -0.4px, -0.4px -0.4px;
 }
-
-/* .bg-pattern {
+.bg-img {
+    background-image: url("https://tailwindcss.com/_next/static/media/hero-dark@90.dba36cdf.jpg");
+    background-attachment: fixed ;
+}
+/*
+0f172a
+.bg-pattern {
     background-color: #1a1a5c;
     opacity: 1;
     background-image:  linear-gradient(#0d1041 0.8px, transparent 0.8px), linear-gradient(90deg, #0d1041 0.8px, transparent 0.8px), linear-gradient(#350659 0.4px, transparent 0.4px), linear-gradient(90deg, #110725 0.4px, #080c2f 0.4px);

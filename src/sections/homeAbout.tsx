@@ -4,7 +4,7 @@ import Text from '../components/text'
 function HomeAbout() {
     return (
         <div className="">
-            <div className="2xl:w-7/12 mx-auto my-8 lg:my-20 flex items-center p-12 bg-white rounded-md shadow-lg">
+            <div className="2xl:w-7/12 mx-auto my-8 lg:my-20 flex items-center p-12 bg-slate-100 rounded-md shadow-lg">
                 <div className="md:w-6/12"></div>
                 <div className='md:w-6/12'>
                     <Text
