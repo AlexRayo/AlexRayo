@@ -1,4 +1,5 @@
 import React from 'react'
+
 import ProjectItem from '../components/projectItem'
 
 import Text from '../components/text'
@@ -11,23 +12,24 @@ import srcImgHomeServices from '../public/img/home-services.png'
 
 function HomeProjects() {
     return (
-        <div className="bg-sky-100 py-12">
+        <div className="relative bg-slate-900 py-12">
+            
             <div className='2xl:w-7/12 mx-auto'>
                 <div className='md:w-6/12 px-3'>
                     <Text
                         text="Proyectos"
                         size="xl"
-                        color="text-primary"
+                        color="text-slate-200"
                     />
-                    <span className='rectangle-button'></span>
+                    <span className='rectangle-button bg-slate-200'></span>
                     <Text
                         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consectetur quos ab autem hic earum cupiditate architecto!."
-                        color="text-primary"
+                        color="text-slate-500"
                     />
                     <br />
                     <Text
                         text="Inventore facere earum nostrum quod illo libero qui minima. Eligendi, explicabo esse."
-                        color="text-primary"
+                        color="text-slate-500"
                     />
                 </div>
 

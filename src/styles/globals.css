@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,7 +6,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 * {
@@ -42,5 +42,21 @@ html {
 
 /** etc **/
 .rectangle-button {
-    @apply bg-primary block h-1.5 w-16 mt-1 rounded
+    @apply block h-1.5 w-16 mt-1 rounded
 }
+
+.bg-pattern {
+    background-color: #4b4b4b;
+    opacity: 1;
+    background-image:  linear-gradient(#cbcbcb 0.8px, transparent 0.8px), linear-gradient(90deg, #cbcbcb 0.8px, transparent 0.8px), linear-gradient(#4b4b4b 0.4px, transparent 0.4px), linear-gradient(90deg, #cbcbcb 0.4px, #f1f1f1 0.4px);
+    background-size: 15px 15px, 15px 15px, 4px 4px, 4px 4px;
+    background-position: -0.8px -0.8px, -0.8px -0.8px, -0.4px -0.4px, -0.4px -0.4px;
+}
+
+/* .bg-pattern {
+    background-color: #1a1a5c;
+    opacity: 1;
+    background-image:  linear-gradient(#0d1041 0.8px, transparent 0.8px), linear-gradient(90deg, #0d1041 0.8px, transparent 0.8px), linear-gradient(#350659 0.4px, transparent 0.4px), linear-gradient(90deg, #110725 0.4px, #080c2f 0.4px);
+    background-size: 20px 20px, 20px 20px, 4px 4px, 4px 4px;
+    background-position: -0.8px -0.8px, -0.8px -0.8px, -0.4px -0.4px, -0.4px -0.4px;
+} */

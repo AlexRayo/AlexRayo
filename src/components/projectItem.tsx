@@ -36,7 +36,7 @@ const ProjectItem = ({ srcImg, altImg, title, technologies, description, urlProj
                         </div>
                     </div>
                 </div>
-                <div className="h-32 md:h-32 bg-white flex items-center justify-between">
+                <div className="h-32 md:h-32 bg-slate-200 flex items-center justify-between">
                     <div className="flex p-3 md:px-6">
                         <FaTools
                             className={"mt-1 mr-2 text-secondary min-w-[20px]"}                            

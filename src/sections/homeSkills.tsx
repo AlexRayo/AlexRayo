@@ -7,7 +7,7 @@ import { skillIcons } from '../icons/skills'
 function Skills() {
     return (
         <div className="">
-            <div className="2xl:w-7/12 mx-auto my-8 lg:my-20 p-3">
+            <div className="2xl:w-7/12 mx-auto my-8 lg:my-20 p-12 bg-white rounded-md shadow-lg">
                 <div className='md:w-6/12'>
                     <Text
                         text="Skills"

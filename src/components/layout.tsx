@@ -4,7 +4,7 @@ import Footer from './footer'
 
 function Layout({children}:any) {
   return (
-    <main>
+    <main className='bg-pattern'>
         <Header/>
             {children}
         <Footer/>
