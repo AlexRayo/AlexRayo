@@ -4,7 +4,7 @@ import Text from '../components/text'
 function HomeCover() {
     return (
         <div className="bg-img md:py-12">
-            <div className="2xl:w-7/12 mx-auto h-96 flex items-center p-3">
+            <div className="xl:w-8/12 mx-auto h-96 flex items-center p-3">
                 <div className='md:w-6/12'>
                     <Text
                         text="Asdf Devs"

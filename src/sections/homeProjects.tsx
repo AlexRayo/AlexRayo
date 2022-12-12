@@ -13,7 +13,7 @@ import srcImgHomeServices from '../public/img/home-services.png'
 function HomeProjects() {
     return (
         <div className="relative bg-img">
-            <div className='2xl:w-7/12 mx-auto py-12'>
+            <div className='xl:w-8/12 mx-auto py-12'>
                 <div className='md:w-6/12 px-3'>
                     <Text
                         text="Proyectos"
