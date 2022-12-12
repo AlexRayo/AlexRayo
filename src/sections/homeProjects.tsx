@@ -18,17 +18,17 @@ function HomeProjects() {
                     <Text
                         text="Proyectos"
                         size="xl"
-                        color="text-sky-400"
+                        style="text-sky-400"
                     />
                     <span className='rectangle-button bg-sky-400'></span>
                     <Text
                         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consectetur quos ab autem hic earum cupiditate architecto!."
-                        color="text-slate-500"
+                        style="text-slate-500"
                     />
                     <br />
                     <Text
                         text="Inventore facere earum nostrum quod illo libero qui minima. Eligendi, explicabo esse."
-                        color="text-slate-500"
+                        style="text-slate-500"
                     />
                 </div>
 

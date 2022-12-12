@@ -10,17 +10,17 @@ function HomeAbout() {
                     <Text
                         text="About"
                         size="xl"
-                        color="text-primary"
+                        style="text-primary"
                     />
                     <span className='rectangle-button'></span>
                     <Text
                         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consectetur quos ab autem hic earum cupiditate architecto!."
-                        color="text-primary"
+                        style="text-primary"
                     />
                     <br />
                     <Text
                         text="Inventore facere earum nostrum quod illo libero qui minima. Eligendi, explicabo esse."
-                        color="text-primary"
+                        style="text-primary"
                     />
                 </div>
             </div>

@@ -7,21 +7,20 @@ import { skillIcons } from '../icons/skills'
 function Skills() {
     return (
         <div className="">
-            <div className="xl:w-8/12 mx-auto my-8 lg:my-20 p-12 bg-white rounded-md shadow-lg">
+            <div className="xl:w-8/12 mx-auto my-8 lg:my-20 p-12 bg-slate-800 rounded-md shadow-lg">
                 <div className='md:w-6/12'>
                     <Text
                         text="Skills"
                         size="xl"
-                        color="text-primary"
+                        style="text-slate-300"
                     />
-                    <span className='rectangle-button'></span>
+                    <span className='rectangle-button bg-slate-300'></span>
                     <Text
                         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consectetur quos ab autem hic earum cupiditate architecto!."
-                        style="mb-2"
-                        color="text-primary"
+                        style="mb-4 text-slate-300"
                     />
                 </div>
-                <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
+                <div className="grid grid-flow-row grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
                     <Skill
                         skillName={'HTML5'}
                         svgCode={skillIcons.html5.svgCode}

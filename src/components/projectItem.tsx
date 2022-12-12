@@ -30,19 +30,19 @@ const ProjectItem = ({ srcImg, altImg, title, technologies, description, urlProj
                         alt={altImg}
                         width={1000}
                         height={500}
-                        className={'absolute'}
+                        className={'absolute group-hover:scale-105'}
                     />
                     <div className="absolute h-full w-full flex items-end bg-gradient-to-t from-slate-900/95 via-slate-900/30 ">
                         <div className='p-3 md:pl-6'>
                             <Text
                                 text={'Proyecto'}
                                 size={"sm"}
-                                color={"text-white leading-4"}
+                                style={"text-white leading-4"}
                             />
                             <Text
                                 text={title}
                                 size={"md"}
-                                color={"text-white font-bold"}
+                                style={"text-white font-bold"}
                             />
                         </div>
                     </div>
@@ -57,24 +57,24 @@ const ProjectItem = ({ srcImg, altImg, title, technologies, description, urlProj
                         <Text
                             text={"Tecnologías:"}
                             size={"sm"}
-                            color={"text-secondary font-bold"}
+                            style={"text-secondary font-bold"}
                         />
                         <Text
                             text={technologies}
                             size={"sm"}
-                            color={"text-slate-300"}
+                            style={"text-slate-300"}
                         />
                         </div>
                     </div>
                     <div className="flex justify-end mr-3 min-w-[100px]">
-                        <div onClick={showDesc} className="btn-secondary flex pb-3 py-0 border border-slate-800 cursor-pointer">
+                        <div onClick={showDesc} className="btn-secondary flex pb-3 py-0 border border-slate-800 cursor-pointer group-hover:bg-sky-500">
                             <FaEye
                                 className={"mr-1 text-slate-300"}
                             />
                             <Text
                                 text={"Ver más"}
                                 size={"xs"}
-                                color={"text-slate-300"}
+                                style={"text-slate-300"}
                             />
                         </div>
                     </div>
@@ -87,18 +87,17 @@ const ProjectItem = ({ srcImg, altImg, title, technologies, description, urlProj
                         <Text
                             text={title}
                             size={"lg"}
-                            color={"text-white font-bold border-b"}
+                            style={"text-white font-bold border-b"}
                         />
                         <Text
                             text={"Sobre el proyecto:"}
                             size={"sm"}
-                            color={"text-gray font-bold"}
-                            style={"mt-2"}
+                            style={"text-gray font-bold mt-2"}
                         />
                         <Text
                             text={description}
                             size={"sm"}
-                            color={"text-gray"}
+                            style={"text-gray"}
                         />
                     </div>
                     <div className="flex mt-4">
