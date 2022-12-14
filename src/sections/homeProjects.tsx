@@ -11,9 +11,31 @@ import srcImgBuscador from '../public/img/rebaja-tu-compra.png'
 import srcImgHomeServices from '../public/img/home-services.png'
 
 function HomeProjects() {
+    const refContainer = React.useRef<HTMLDivElement>(null);
+    const [btnText, setBtnText] = React.useState("Show more projects")
+
+    const expandContainer = () => {
+        if (refContainer.current !== null && btnText === "Show more projects") {
+            refContainer.current.classList.remove("h-[65rem] xl:h-[45rem]")
+            setBtnText("Hide")
+        }
+        if (refContainer.current !== null && btnText === "Hide") {
+            refContainer.current.classList.add("h-[65rem] xl:h-[45rem]")
+            setBtnText("Show more projects")
+        }
+    }
+
     return (
-        <div className="relative bg-img">
-            <div className='xl:w-8/12 mx-auto py-12'>
+        <div ref={refContainer} className="relative bg-img h-[65rem] xl:h-[45rem] overflow-hidden transition-all">
+
+            <div className="xl:w-8/12 mx-auto inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-white pt-20 pb-8  dark:from-slate-900 absolute z-10">
+                <button
+                    onClick={expandContainer}
+                    className="text-slate-300 btn-secondary cursor-pointer z-20"
+                >{btnText}</button>
+            </div>
+
+            <div className='xl:w-8/12 mx-auto py-12 pb-32'>
                 <div className='md:w-6/12 px-3'>
                     <Text
                         text="Proyectos"
@@ -32,7 +54,7 @@ function HomeProjects() {
                     />
                 </div>
 
-                <div className={"p-3 grid md:gap-x-12 md:gap-y-4 md:grid-cols-2 lg:p-0"}>                    
+                <div className={"p-3 grid md:gap-x-12 md:gap-y-4 md:grid-cols-2 lg:p-0"}>
 
                     <ProjectItem
                         srcImg={srcImgHomeServices}
@@ -41,7 +63,7 @@ function HomeProjects() {
                         technologies={"Wordpress, ReactJS, PHP, CSS3, HTML5, JavaScript"}
                         description={"Este sitio web posee formulario con ReactJS y PHP para capturar peticiones de servicios por parte de los clientes"}
                         urlProject={"https://home-services.es/"}
-                    />                    
+                    />
 
                     <ProjectItem
                         srcImg={srcImgYDePostre}

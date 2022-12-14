@@ -50,19 +50,19 @@ const ProjectItem = ({ srcImg, altImg, title, technologies, description, urlProj
                 <div className="h-32 md:h-32 bg-slate-900 flex items-center justify-between">
                     <div className="flex p-3 md:px-6">
                         <FaTools
-                            className={"mt-1 mr-2 text-secondary min-w-[20px]"}                            
+                            className={"mt-1 mr-2 text-sky-600 min-w-[20px] group-hover:text-sky-500"}                            
                             size={"20px"}
                         />
                         <div className="">
                         <Text
                             text={"Tecnologías:"}
                             size={"sm"}
-                            style={"text-secondary font-bold"}
+                            style={"text-sky-600 font-bold group-hover:text-sky-500"}
                         />
                         <Text
                             text={technologies}
                             size={"sm"}
-                            style={"text-slate-300"}
+                            style={"text-slate-400 group-hover:text-slate-300"}
                         />
                         </div>
                     </div>

@@ -7,7 +7,7 @@ import { skillIcons } from '../icons/skills'
 function Skills() {
     return (
         <div className="">
-            <div className="xl:w-8/12 mx-auto my-8 lg:my-20 p-12 bg-slate-800 rounded-md shadow-lg">
+            <div className="xl:w-8/12 mx-auto my-8 lg:my-20 py-12 px-3 md:px-12 bg-slate-800 md:rounded-md shadow-lg">
                 <div className='md:w-6/12'>
                     <Text
                         text="Skills"
@@ -60,7 +60,7 @@ function Skills() {
                         skillName={'Git/Github'}
                         svgCode={skillIcons.git.svgCode}
                         viewBox={skillIcons.git.viewBox}
-                        iconColor={'fill-slate-900'}
+                        iconColor={'fill-slate-300'}
                         modalText={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
                     />
                     <Skill
