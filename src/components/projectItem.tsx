@@ -5,18 +5,27 @@ import { FaTools, FaEye, FaExternalLinkAlt } from "react-icons/fa";
 import Text from '../components/text'
 
 const ProjectItem = ({ srcImg, altImg, title, technologies, description, urlProject }: any) => {
-    const descRef = React.useRef<HTMLDivElement>(null);
+    const descriptionRef = React.useRef<HTMLDivElement>(null);
+    const btnRef = React.useRef<HTMLDivElement>(null);
 
     const showDesc = () => {
-        if(descRef.current) {
-            descRef.current.classList.add("mt-0")
+        if(descriptionRef.current) {
+            descriptionRef.current.classList.remove("mt-80")
         }
     }
-    const hideDesc = () => {
-        if(descRef.current) {
-            descRef.current.classList.remove("mt-0")
+    const hideDescOnDesk = () => {
+        if(descriptionRef.current && window.innerWidth >= 640) {
+            descriptionRef.current.classList.add("mt-80")
         }
     }
+
+    /* Hide the description info when user leaves the show more btn on mobile*/
+    const hideDescOnMobile = () => {
+        if(descriptionRef.current && window.innerWidth < 640) {
+            descriptionRef.current.classList.add("mt-80")
+        }
+    }
+
 
     return (
         <div className="group relative mb-4 md:w-12/12 h-80 md:h-80 overflow-hidden my-4 md:m-3 rounded-b-md shadow-lg border border-slate-800">
@@ -67,7 +76,7 @@ const ProjectItem = ({ srcImg, altImg, title, technologies, description, urlProj
                         </div>
                     </div>
                     <div className="flex justify-end mr-3 min-w-[100px]">
-                        <div onClick={showDesc} className="btn-secondary flex pb-3 py-0 border border-slate-800 cursor-pointer group-hover:bg-sky-500">
+                        <div onClick={showDesc} onMouseLeave={hideDescOnMobile} className="btn-secondary flex pb-3 py-0 border border-slate-800 cursor-pointer group-hover:bg-sky-500">
                             <FaEye
                                 className={"mr-1 text-slate-300"}
                             />
@@ -81,7 +90,7 @@ const ProjectItem = ({ srcImg, altImg, title, technologies, description, urlProj
                 </div>
             </div>
 
-            <div ref={descRef}  onMouseLeave={hideDesc} className="absolute flex items-center justify-center w-full h-full px-6 mt-80 transition-all bg-slate-900 opacity-95 border-t-2 border-sky-500">
+            <div ref={descriptionRef}  onMouseLeave={hideDescOnDesk} className="absolute flex items-center justify-center w-full h-full px-6 mt-80 transition-all bg-slate-900 opacity-95 border-t-2 border-sky-500">
                 <div>
                     <div>
                         <Text

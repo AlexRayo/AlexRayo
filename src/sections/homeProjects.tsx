@@ -16,11 +16,13 @@ function HomeProjects() {
 
     const expandContainer = () => {
         if (refContainer.current !== null && btnText === "Show more projects") {
-            refContainer.current.classList.remove("h-[65rem] xl:h-[45rem]")
+            refContainer.current.classList.remove("h-[65rem]")
+            refContainer.current.classList.remove("xl:h-[45rem]")
             setBtnText("Hide")
         }
         if (refContainer.current !== null && btnText === "Hide") {
-            refContainer.current.classList.add("h-[65rem] xl:h-[45rem]")
+            refContainer.current.classList.add("h-[65rem]")
+            refContainer.current.classList.add("xl:h-[45rem]")
             setBtnText("Show more projects")
         }
     }
