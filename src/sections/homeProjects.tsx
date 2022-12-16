@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useInView } from 'react-intersection-observer';
 import ProjectItem from '../components/projectItem'
 
 import Text from '../components/text'
@@ -37,12 +37,12 @@ function HomeProjects() {
                 >{btnText}</button>
             </div>
 
-            <div className='xl:w-8/12 mx-auto py-12 pb-32'>
+            <div className={`xl:w-8/12 mx-auto py-20 pb-32`} >
                 <div className='md:w-6/12 px-3'>
                     <Text
                         text="Proyectos"
                         size="xl"
-                        style="text-sky-400"
+                        style={`text-sky-400`}
                     />
                     <span className='rectangle-button bg-sky-400'></span>
                     <Text

@@ -17,6 +17,11 @@ export default function Home() {
             <Skills/>  
 
             <Projects/>
+            <Cover/>
+
+            <About/>
+            
+            <Skills/> 
             
         </div>
     )

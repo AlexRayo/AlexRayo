@@ -1,10 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
+
+import { useInView } from 'react-intersection-observer';
+
 import { FaTools, FaEye, FaExternalLinkAlt } from "react-icons/fa";
 
 import Text from '../components/text'
 
 const ProjectItem = ({ srcImg, altImg, title, technologies, description, urlProject }: any) => {
+
+    const { ref, inView } = useInView({
+        threshold: 0.5,
+      });
+
     const descriptionRef = React.useRef<HTMLDivElement>(null);
     const btnRef = React.useRef<HTMLDivElement>(null);
 
@@ -28,7 +36,7 @@ const ProjectItem = ({ srcImg, altImg, title, technologies, description, urlProj
 
 
     return (
-        <div className="group relative mb-4 md:w-12/12 h-80 md:h-80 overflow-hidden my-4 md:m-3 rounded-b-md shadow-lg border border-slate-800">
+        <div ref={ref} className={`transition-all duration-500 group relative mb-4 md:w-12/12 h-80 md:h-80 overflow-hidden my-4 md:m-3 rounded-b-md ${inView? "opacity-1 pl-0": "opacity-0 pl-12"}`}>
 
             <div className="absolute w-full">
                 

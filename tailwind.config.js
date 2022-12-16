@@ -5,14 +5,10 @@ module.exports = {
       ],
   theme: {
     extend: {
-        colors: {
-            primary: '#1c1c1c',
-            secondary: {
-                100: 'white',
-                200: '#f1f1f1',
-            }
-
-        },
+        boxShadow: {
+            'solid-2xl' : '-25px 25px 0px rgba(0, 0, 0, 0.25)',
+            'solid-3xl' : '-35px 35px 0px rgba(0, 0, 0, 0.25)',
+        }
     },
   },
   plugins: [],

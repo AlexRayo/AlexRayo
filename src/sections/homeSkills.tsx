@@ -1,21 +1,29 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer';
+
 import Text from '../components/text'
 import Skill from '../components/skillItem'
 
 import { skillIcons } from '../icons/skills'
 
 function Skills() {
+    const { ref: textRef, inView:inViewText } = useInView({
+        threshold: 0.5,
+      });
+
     return (
-        <div className="">
-            <div className="xl:w-8/12 mx-auto my-8 lg:my-20 py-12 px-3 md:px-12 bg-slate-800 md:rounded-md shadow-lg">
+        <div>
+            <div className="xl:w-8/12 mx-auto mb-8 lg:mb-20 py-12 px-3 md:px-12">
                 <div className='md:w-6/12'>
                     <Text
                         text="Skills"
                         size="xl"
-                        style="text-slate-300"
+                        ref={textRef}
+                        style={`transition-all text-sky-500 ${inViewText? "opacity: 1" : "opacity: 0"}`}
                     />
-                    <span className='rectangle-button bg-slate-300'></span>
+                    <span className='rectangle-button bg-sky-500'></span>
                     <Text
+                        ref={textRef}
                         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consectetur quos ab autem hic earum cupiditate architecto!."
                         style="mb-4 text-slate-300"
                     />

@@ -69,6 +69,15 @@ html {
     background-image: url("https://tailwindcss.com/_next/static/media/hero-dark@90.dba36cdf.jpg");
     background-attachment: fixed ;
 }
+
+/*JS INTERACTION*/
+.hiddenElement {
+    opacity: 0;
+}
+.showElement {
+    opacity: 1;
+}
+
 /*
 0f172a
 .bg-pattern {
