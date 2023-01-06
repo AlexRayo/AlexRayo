@@ -7,9 +7,6 @@ import Skill from '../components/skillItem'
 import { skillIcons } from '../icons/skills'
 
 function Skills() {
-    const { ref: textRef, inView:inViewText } = useInView({
-        threshold: 0.5,
-      });
 
     return (
         <div>
@@ -18,12 +15,10 @@ function Skills() {
                     <Text
                         text="Skills"
                         size="xl"
-                        ref={textRef}
-                        style={`transition-all text-sky-500 ${inViewText? "opacity: 1" : "opacity: 0"}`}
+                        style={`transition-all text-sky-500`}
                     />
                     <span className='rectangle-button bg-sky-500'></span>
                     <Text
-                        ref={textRef}
                         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consectetur quos ab autem hic earum cupiditate architecto!."
                         style="mb-4 text-slate-300"
                     />

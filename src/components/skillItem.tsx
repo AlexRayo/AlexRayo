@@ -1,11 +1,16 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer';
 import ModalSkill from '../components/modalSkill'
 
 const SkillItem =({ modalText, svgCode, viewBox, skillName, iconColor }: any) =>{
     const [showModalSkill, setShowModalSkill] = React.useState(false)
 
+    const { ref: textRef, inView:inViewText } = useInView({
+        threshold: 0.5,
+      });
+
     return (
-        <div className='group'>
+        <div ref={textRef} className={`group ${inViewText? "opacity: 1" : "opacity: 0"}`}>
             <ModalSkill
                 svgCode={svgCode}
                 viewBox={viewBox}
