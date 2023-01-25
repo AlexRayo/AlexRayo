@@ -13,8 +13,7 @@ function HomeCover() {
                     />
                     <Text
                         text="Frontend developer"
-                        size="lg"
-                        style="text-slate-400"
+                        style="text-slate-400 text-2xl"
                     />
                     <Text
                         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officiis omnis pariatur alias vero hic nobis iste, ipsa."

@@ -2,7 +2,7 @@ import React from 'react'
 import { useInView } from 'react-intersection-observer';
 import ModalSkill from '../components/modalSkill'
 
-const SkillItem =({ modalText, svgCode, viewBox, skillName, iconColor }: any) =>{
+const SkillItem =({ modalText, modalAriaId, svgCode, viewBox, skillName, iconColor }: any) =>{
     const [showModalSkill, setShowModalSkill] = React.useState(false)
 
     const { ref: textRef, inView:inViewText } = useInView({
@@ -17,6 +17,7 @@ const SkillItem =({ modalText, svgCode, viewBox, skillName, iconColor }: any) =>
                 iconColor={iconColor}
                 title={skillName}
                 text={modalText}
+                modalAriaId={modalAriaId}
                 showModal={showModalSkill}
                 setShowModal={setShowModalSkill}
                 style={showModalSkill ? 'initial' : 'hidden'}
@@ -26,7 +27,7 @@ const SkillItem =({ modalText, svgCode, viewBox, skillName, iconColor }: any) =>
                     <div className="h-16 my-2">
                         <svg className={`group-hover:scale-110 w-10 md:w-12 lg:w-14 mx-auto ${iconColor}`} xmlns="http://www.w3.org/2000/svg" viewBox={viewBox}><path d={svgCode} /></svg>
                     </div>
-                    <p className="text-xs text-gray-500">{skillName}</p>
+                    <p className="text-xs text-gray-400">{skillName}</p>
                 </div>
             </div>
         </div>

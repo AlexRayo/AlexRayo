@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const fs = require('fs');
-const nextConfig = {
+const nextConfig = {    
+  i18n: {
+    locales: ["es"],
+    defaultLocale: "es",
+  },
   reactStrictMode: true,
   swcMinify: true,
 }

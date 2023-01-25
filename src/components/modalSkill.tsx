@@ -1,8 +1,8 @@
 import React from 'react'
 
-function ModalSkill({ title, text, style, setShowModal, showModal, svgCode, iconColor, viewBox }: any) {
+function ModalSkill({ title, modalAriaId, text, style, setShowModal, showModal, svgCode, iconColor, viewBox }: any) {
     return (
-        <div className={`relative z-10 ${style}`} aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div className={`relative z-10 ${style}`} aria-labelledby={modalAriaId} role="dialog" aria-modal="true">
 
             <div onClick={() => setShowModal(!showModal)} className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
@@ -18,7 +18,7 @@ function ModalSkill({ title, text, style, setShowModal, showModal, svgCode, icon
 
                                 </div>
                                 <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                                    <h3 className="text-lg font-medium leading-6 text-gray-900" id="modal-title">{title}</h3>
+                                    <h3 className="text-lg font-medium leading-6 text-gray-900" id={modalAriaId}>{title}</h3>
                                     <div className="mt-2">
                                         <p className="text-sm text-gray-500">{text}</p>
                                     </div>

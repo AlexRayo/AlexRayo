@@ -29,6 +29,7 @@ function Skills() {
                         svgCode={skillIcons.html5.svgCode}
                         viewBox={skillIcons.html5.viewBox}
                         iconColor={'fill-orange-600'}
+                        modalAriaId={"html5"}
                         modalText={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
                     />
                     <Skill
@@ -36,6 +37,7 @@ function Skills() {
                         svgCode={skillIcons.css3.svgCode}
                         viewBox={skillIcons.css3.viewBox}
                         iconColor={'fill-sky-500'}
+                        modalAriaId={"css3"}
                         modalText={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
                     />
                     <Skill
@@ -43,6 +45,7 @@ function Skills() {
                         svgCode={skillIcons.javascript.svgCode}
                         viewBox={skillIcons.javascript.viewBox}
                         iconColor={'fill-amber-500'}
+                        modalAriaId={"js"}
                         modalText={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
                     />
                     <Skill
@@ -50,6 +53,7 @@ function Skills() {
                         svgCode={skillIcons.typescript.svgCode}
                         viewBox={skillIcons.typescript.viewBox}
                         iconColor={'fill-sky-600'}
+                        modalAriaId={"ts"}
                         modalText={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
                     />
                     <Skill
@@ -57,6 +61,7 @@ function Skills() {
                         svgCode={skillIcons.mysql.svgCode}
                         viewBox={skillIcons.mysql.viewBox}
                         iconColor={'fill-sky-700'}
+                        modalAriaId={"mysql"}
                         modalText={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
                     />
                     <Skill
@@ -64,6 +69,7 @@ function Skills() {
                         svgCode={skillIcons.git.svgCode}
                         viewBox={skillIcons.git.viewBox}
                         iconColor={'fill-slate-300'}
+                        modalAriaId={"git"}
                         modalText={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
                     />
                     <Skill
@@ -71,6 +77,7 @@ function Skills() {
                         svgCode={skillIcons.react.svgCode}
                         viewBox={skillIcons.react.viewBox}
                         iconColor={'fill-sky-400'}
+                        modalAriaId={"react"}
                         modalText={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
                     />
                     <Skill
@@ -78,6 +85,7 @@ function Skills() {
                         svgCode={skillIcons.react.svgCode}
                         viewBox={skillIcons.react.viewBox}
                         iconColor={'fill-sky-400'}
+                        modalAriaId={"rn"}
                         modalText={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
                     />
                     <Skill
@@ -85,6 +93,7 @@ function Skills() {
                         svgCode={skillIcons.node.svgCode}
                         viewBox={skillIcons.node.viewBox}
                         iconColor={'fill-green-500'}
+                        modalAriaId={"node"}
                         modalText={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
                     />
                     <Skill
@@ -92,6 +101,7 @@ function Skills() {
                         svgCode={skillIcons.wordpress.svgCode}
                         viewBox={skillIcons.wordpress.viewBox}
                         iconColor={'fill-sky-700'}
+                        modalAriaId={"wp"}
                         modalText={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
                     />
                     <Skill
@@ -99,6 +109,7 @@ function Skills() {
                         svgCode={skillIcons.uiux.svgCode}
                         viewBox={skillIcons.uiux.viewBox}
                         iconColor={'fill-violet-500'}
+                        modalAriaId={"uiux"}
                         modalText={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}
                     />
                 </div>

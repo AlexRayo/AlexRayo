@@ -37,7 +37,7 @@ function skillItem({size, text, style}:any) {
         {text}
     </p>
     :
-    <p className={`text-base ${style}`}>
+    <p className={`${style}`}>
         {text}
     </p>
   )
